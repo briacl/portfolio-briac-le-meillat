@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Briac Le Meillat's Website</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Craftivo
+  * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
+  * Updated: Oct 04 2025 with Bootstrap v5.3.8
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Briac Le Meillat</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Accueil</a></li>
+          <li><a href="#about">CV</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+              <li class="dropdown"><a href="#services"><span>Compétences</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Développement web</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="#"><span>Frontend</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#portfolio" data-filter=".filter-figma">Figma</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-html">HTML / CSS</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-tailwind">Tailwind CSS</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-heroui">HeroUI</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-react">React</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-bootstrap">Bootstrap</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown"><a href="#"><span>Backend</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#portfolio" data-filter=".filter-php">PHP</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-mysql">MySQL (phpMyAdmin)</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Administration réseau</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="#"><span>Protocoles</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#portfolio" data-filter=".filter-ssh">SSH</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-tcp">TCP</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-http">HTTP</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-https">HTTPS</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-arp">ARP</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown"><a href="#"><span>Réseau</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#portfolio" data-filter=".filter-wireshark">Analyse de trame Ethernet, IP, ICMP via Wireshark</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-ipv4">IPv4</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-packettracer">Création de maquettes réseau basiques (Cisco Packet Tracer)</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-lan">LAN/VLAN</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-dhcp">DHCP</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-dns">DNS</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown"><a href="#"><span>OS</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#portfolio" data-filter=".filter-linux">Linux</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-mac">macOS</a></li>
+                      <li><a href="#portfolio" data-filter=".filter-windows">Windows</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Programmation</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#portfolio" data-filter=".filter-python">Python</a></li>
+                  <li><a href="#portfolio" data-filter=".filter-c">C</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Télécommunication</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#portfolio" data-filter=".filter-ltspice">LTSpice</a></li>
+                  <li><a href="#portfolio" data-filter=".filter-mathlab">MathLab</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/structure-moleculaire-rougeoyante-sur-fond-de-galaxie-futuriste-generee-par-l-ia.jpg" alt="" data-aos="fade-in">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+            <h2>Bonjour, je suis Briac Le Meillat</h2>
+            <p>Je suis <span class="typed" data-typed-items="Développeur Web, Administrateur Réseau, Programmeur, Analyste Télécom"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://github.com/briacl"><i class="bi bi-github"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">CV</span>
+        </div>
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-5">
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+              <div class="profile-card">
+            <div class="profile-header">
+              <div class="profile-avatar">
+                <img src="assets/img/profile/profile-square-3.webp" class="img-fluid" alt="">
+                <div class="status-indicator"></div>
+              </div>
+              <h3>Briac Le Meillat</h3>
+              <span class="role">Etudiant de 1ère année en R&T</span>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span>3.8</span>
+              </div>
+            </div>
+
+            <div class="profile-stats">
+              <div class="stat-item">
+                <h4>15</h4>
+                <p>Projets</p>
+              </div>
+              <div class="stat-item">
+                <h4>5</h4>
+                <p>Années</p>
+              </div>
+              <div class="stat-item">
+                <h4>2</h4>
+                <p>Certifications</p>
+              </div>
+            </div>
+
+            <div class="profile-actions">
+              <a href="#" class="btn-primary"><i class="bi bi-download"></i> Télécharger mon CV</a>
+              <a href="#" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+            </div>
+
+            <div class="social-connect">
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+
+            </div>
+          </div>
+
+                <!-- skills-showcase removed from About section; moved to Education column to the right of timeline -->
+
+                <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+                  <div class="content-wrapper">
+                    <div class="bio-section">
+                      <div class="section-tag">About Me</div>
+                      <h2>Transforming Ideas into Digital Reality</h2>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
+                      <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                    </div>
+
+                    <div class="details-grid">
+                      <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
+                        <i class="bi bi-briefcase"></i>
+                        <div class="detail-content">
+                          <span>Experience</span>
+                          <strong>5 ans</strong>
+                        </div>
+                      </div>
+
+                      <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                        <i class="bi bi-mortarboard"></i>
+                        <div class="detail-content">
+                          <span>Niveau d'étude</span>
+                          <strong>Etudiant en 1ère année de R&T</strong>
+                        </div>
+                      </div>
+
+                      <div class="detail-item" data-aos="fade-up" data-aos-delay="350">
+                        <i class="bi bi-geo-alt"></i>
+                        <div class="detail-content">
+                          <span>Localisation</span>
+                          <strong>France, UE</strong>
+                        </div>
+                      </div>
+
+                      <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
+                        <i class="bi bi-envelope"></i>
+                        <div class="detail-content">
+                          <span>Email</span>
+                          <strong>briac_lemeillat@ens.univ-artois.fr</strong>
+                        </div>
+                      </div>
+
+                      <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
+                        <i class="bi bi-calendar-check"></i>
+                        <div class="detail-content">
+                          <span>Disponibilité</span>
+                          <strong>En étude</strong>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+          </div>
+
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="row gy-5">
+
+
+            <div class="col-12">
+              <div class="education-section">
+                <div class="section-header" data-aos="fade-left" data-aos-delay="200">
+                  <div class="header-content">
+                    <div class="section-spacer" aria-hidden="true"></div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
+                    <div class="section-header" data-aos="fade-left" data-aos-delay="200">
+                      <div class="header-content">
+                        <div class="section-tag">parcours</div>
+                        <h3>Parcours d'étude</h3>
+                      </div>
+                    </div>
+                    <div class="education-timeline">
+                      <div class="timeline-track">
+                        <div class="timeline-item">
+                          <div class="timeline-marker">
+                            <i class="bi bi-mortarboard-fill"></i>
+                          </div>
+                          <div class="timeline-content">
+                            <div class="education-meta">
+                              <span class="year-range">2025</span>
+                              <span class="degree-level">Formation</span>
+                            </div>
+                            <h4>1ère année R&T</h4>
+                            <p class="institution">IUT de Béthunes</p>
+                            <p class="description">Je suis en train de passer la certification Python de Cisco. J'ai évidemment la certification Pix. Et j'ai également la certification MOOC de l'ANSI</p>
+                            <div class="achievement">
+                              <i class="bi bi-award"></i>
+                              <span>Certification Pix</span>
+                            </div>
+                            <div class="achievement">
+                              <i class="bi bi-award"></i>
+                              <span>Certification MOOC de l'ANSI</span>
+                            </div>
+                            <div class="achievement">
+                              <i class="bi bi-award"></i>
+                              <span>Certification Cisco Python en cours</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item">
+                          <div class="timeline-marker">
+                            <i class="bi bi-book"></i>
+                          </div>
+                          <div class="timeline-content">
+                            <div class="education-meta">
+                              <span class="year-range">2023 - 2025</span>
+                              <span class="degree-level">Autodidacte</span>
+                            </div>
+                            <h4>2 ans d'approfondissement</h4>
+                            <p class="institution">Domicile</p>
+                            <p class="description">Durant ces 2 ans, j'ai approfondis mes connaissances et compétences dans le développement web et d'application sur téléphone. C'est également dans cette période que j'ai découvert et me suis perfectionné dans le langage de programmation Python</p>
+                          </div>
+                        </div>
+
+                        <div class="timeline-item">
+                          <div class="timeline-marker">
+                            <i class="bi bi-book"></i>
+                          </div>
+                          <div class="timeline-content">
+                            <div class="education-meta">
+                              <span class="year-range">2022 - 2023</span>
+                              <span class="degree-level">Formation</span>
+                            </div>
+                            <h4>MMI</h4>
+                            <p class="institution">IUT de Lens</p>
+                            <p class="description">C'est en MMI que j'ai découvert le développement web. J'y ai appris à coder mes tout premiers sites en PHP, que j'ai découvert également les manipulations de bases de données (MySQL & phpMyAdmin), ou encore que j'ai appris à designer l'interface (le frontend) du site. Toutes ces connaissances et compétences que je vais ensuite approfondir durant les 2 années suivantes</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skills-showcase">
+                      <div class="section-tag">Compétences</div>
+                      <h3>Compétences techniques</h3>
+
+                      <div class="skills-list skills-animation">
+                        <!-- Frontend -->
+                        <div class="skills-group">
+                          <div class="section-tag">Développement Web</div>
+                          <div class="skill-row">
+                            <h4 class="skills-group-title">Frontend</h4>
+                            <div class="skill-item">
+                              <div class="skill-info">
+                                <a href="#portfolio" class="skill-link" data-filter=".filter-figma">Maquette UX basique (Figma)</a>
+                                <span class="skill-percent">70%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="skill-item">
+                            <div class="skill-info">
+                              <a href="#portfolio" class="skill-link" data-filter=".filter-html">HTML / CSS</a>
+                              <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+
+                          <div class="skill-item">
+                            <div class="skill-info">
+                              <a href="#portfolio" class="skill-link" data-filter=".filter-tailwind">Tailwind CSS</a>
+                              <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+
+                          <div class="skill-item">
+                            <div class="skill-info">
+                              <a href="#portfolio" class="skill-link" data-filter=".filter-heroui">HeroUI</a>
+                              <span class="skill-percent">5%</span>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+
+                          <div class="skill-item">
+                            <div class="skill-info">
+                              <a href="#portfolio" class="skill-link" data-filter=".filter-react">React</a>
+                              <span class="skill-percent">5%</span>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+
+                          <div class="skill-item">
+                            <div class="skill-info">
+                              <a href="#portfolio" class="skill-link" data-filter=".filter-bootstrap">Bootstrap</a>
+                              <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="skills-group">
+                          <div class="skill-row">
+                            <h4 class="skills-group-title">Backend</h4>
+                            <div class="skills-items">
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-php">PHP</a>
+                                  <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-mysql">MySQL (phpMyAdmin)</a>
+                                  <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-python">Python</a>
+                                  <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Protocoles -->
+                        <div class="skills-group">
+                          <div class="section-tag">Administration Réseau</div>
+                          <div class="skill-row">
+                            <h4 class="skills-group-title">Protocoles</h4>
+                            <div class="skills-items">
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-ssh">SSH</a>
+                                  <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-tcp">TCP</a>
+                                  <span class="skill-percent">10%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-http">HTTP</a>
+                                  <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-https">HTTPS</a>
+                                  <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-arp">ARP</a>
+                                  <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Réseau -->
+                        <div class="skills-group">
+                          <div class="skill-row">
+                            <h4 class="skills-group-title">Réseau</h4>
+                            <div class="skills-items">
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-wireshark">Analyse de trame (Wireshark)</a>
+                                  <span class="skill-percent">100%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-ipv4">IPv4</a>
+                                  <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-packettracer">Maquette réseau basique (Cisco Packet Tracer)</a>
+                                  <span class="skill-percent">100%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-lan">LAN/VLAN basique</a>
+                                  <span class="skill-percent">100%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-lan">Serveur DHCP</a>
+                                  <span class="skill-percent">100%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-lan">Serveur DNS</a>
+                                  <span class="skill-percent">100%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- OS -->
+                        <div class="skills-group">
+                          <div class="skill-row">
+                            <h4 class="skills-group-title">OS</h4>
+                            <div class="skills-items">
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-linux">Linux</a>
+                                  <span class="skill-percent">30%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-mac">macOS</a>
+                                  <span class="skill-percent">50%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+
+                              <div class="skill-item">
+                                <div class="skill-info">
+                                  <a href="#portfolio" class="skill-link" data-filter=".filter-windows">Windows</a>
+                                  <span class="skill-percent">0%</span>
+                                </div>
+                                <div class="progress">
+                                  <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section><!-- /Resume Section -->
+
+        
+
+    </section><!-- /About Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Portfolio</span>
+        <h2>Portfolio</h2>
+        <p>Voici tous les projets que j'ai réalisés.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All Work</li>
+            <!-- Frontend -->
+            <li data-filter=".filter-figma">Figma</li>
+            <li data-filter=".filter-html">HTML / CSS</li>
+            <li data-filter=".filter-tailwind">Tailwind CSS</li>
+            <li data-filter=".filter-heroui">HeroUI</li>
+            <li data-filter=".filter-react">React</li>
+            <li data-filter=".filter-bootstrap">Bootstrap</li>
+            <!-- Backend -->
+            <li data-filter=".filter-php">PHP</li>
+            <li data-filter=".filter-symfony">Symfony</li>
+            <li data-filter=".filter-laravel">Laravel</li>
+            <li data-filter=".filter-mysql">MySQL (phpMyAdmin)</li>
+            <!-- Programming -->
+            <li data-filter=".filter-python">Python</li>
+            <li data-filter=".filter-c">C</li>
+            <!-- Protocoles -->
+            <li data-filter=".filter-ssh">SSH</li>
+            <li data-filter=".filter-tcp">TCP</li>
+            <li data-filter=".filter-http">HTTP</li>
+            <li data-filter=".filter-https">HTTPS</li>
+            <li data-filter=".filter-arp">ARP</li>
+            <!-- Réseau -->
+            <li data-filter=".filter-wireshark">Wireshark</li>
+            <li data-filter=".filter-ipv4">IPv4</li>
+            <li data-filter=".filter-packettracer">Cisco Packet Tracer</li>
+            <li data-filter=".filter-lan">LAN/VLAN</li>
+            <li data-filter=".filter-dhcp">DHCP</li>
+            <li data-filter=".filter-dns">DNS</li>
+            <!-- OS -->
+            <li data-filter=".filter-linux">Linux</li>
+            <li data-filter=".filter-mac">macOS</li>
+            <li data-filter=".filter-windows">Windows</li>
+            <!-- Télécommunication -->
+            <li data-filter=".filter-ltspice">LTSpice</li>
+            <li data-filter=".filter-mathlab">MathLab</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ltspice filter-mathlab">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Télécommunication</span>
+                      <h4>sae103 - découverte d'un dispositif de transmission (câble coaxial)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Bootstrap</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">Frontend</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ltspice filter-mathlab">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations\image-illustration-ltspice.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Télécommunication</span>
+                      <h4>sae103 - découverte d'un dispositif de transmission (câble coaxial)</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">LTSpice</span>
+                    <span class="tag">MathLab</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Programmation</span>
+                      <h4>scraper-cinema</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Python</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4 filter-ssh">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Administration Réseau</span>
+                      <h4>Réalisation LAN Homelab</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Linux</span>
+                    <span class="tag">LAN</span>
+                    <span class="tag">VLAN</span>
+                    <span class="tag">IPv4</span>
+                    <span class="tag">SSH</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4 filter-dhcp filter-dns">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Administration Réseau</span>
+                      <h4>Mise en place d'un DHCP et DNS pour le LAN Homelab</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">LAN</span>
+                    <span class="tag">DHCP</span>
+                    <span class="tag">DNS</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Administration Réseau</span>
+                      <h4>Cartographie basique LAN & VLAN</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Linux</span>
+                    <span class="tag">LAN</span>
+                    <span class="tag">VLAN</span>
+                    <span class="tag">IPv4</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wireshark filter-linux">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations\Wireshark-Marquer-des-paquets-dans-une-capture.jpg.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Administration Réseau</span>
+                      <h4>IT Connect img Analyse de trame via Wireshark</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Réseau</span>
+                    <span class="tag">Linux</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Programmation</span>
+                      <h4>willkommen_v2</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Python</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations\LogKeys-Monitor-Keyboard-Keystrokes-in-Linux.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Administration</span>
+                      <h4>Installation Linux</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Linux</span>
+                  </div>
+                  <div class="project-year">2025</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-windows">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations\OOmxgdF1SROoG_Rf9PcqAQ_副本.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Administration</span>
+                      <h4>Installation Windows</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Windows</span>
+                  </div>
+                  <div class="project-year">2025</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-symfony filter-php filter-symfony filter-mysql">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations/mesvoyages.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Développement Web</span>
+                      <h4>Mesvoyages Website</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Symfony</span>
+                    <span class="tag">Frontend</span>
+                    <span class="tag">Backend</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Programmation</span>
+                      <h4>willkommen_v1</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Python</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Programmation</span>
+                      <h4>two-years-leaning-python</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Python</span>
+                  </div>
+                  <div class="project-year">2024</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-tailwind">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations/briac_website.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Développement Web</span>
+                      <h4>Briac's Website</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Frontend</span>
+                    <span class="tag">TailwindCSS</span>
+                  </div>
+                  <div class="project-year">2023</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-php filter-mysql">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations/lefauxinstagram.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Développement Web</span>
+                      <h4>Le Faux Instagram</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Frontend</span>
+                    <span class="tag">Backend</span>
+                  </div>
+                  <div class="project-year">2023</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-php filter-mysql">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations/qel_questionnaire_en_ligne.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Développement</span>
+                      <h4>QEL : Questionnaire en ligne</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Frontend</span>
+                    <span class="tag">Backend</span>
+                  </div>
+                  <div class="project-year">2023</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-php">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="portfolio-illustrations/weackers.png" alt="Web Development Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Développement Web</span>
+                      <h4>Weackers</h4>
+                    </div>
+                    <div class="portfolio-actions">
+                      <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
+                        <i class="bi bi-plus-lg"></i>
+                      </a>
+                      <a href="#" class="portfolio-details">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">PHP</span>
+                  </div>
+                  <div class="project-year">2023</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+    
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Briac Le Meillat</span>
+          </a>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-github"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Liens utiles</h4>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#about">A propos de moi</a></li>
+            <li><a href="#services">Compétences</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Compétences</h4>
+          <ul>
+            <li><a href="#portfolio" data-filter=".filter-html,.filter-php,.filter-mysql,.filter-react,.filter-tailwind,.filter-bootstrap,.filter-figma,.filter-symfony,.filter-laravel">Développement Web</a></li>
+            <li><a href="#portfolio" data-filter=".filter-ssh,.filter-tcp,.filter-http,.filter-https,.filter-arp,.filter-wireshark,.filter-ipv4,.filter-packettracer,.filter-lan">Administration Réseau</a></li>
+            <li><a href="#portfolio" data-filter=".filter-python,.filter-c">Programmation</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Me contacter</h4>
+          <p>1230 Rue de l'Université CS 20819, 62400 Béthune</p>
+          <p>France</p>
+          <p><strong>Email:</strong> <span>briac_lemeillat@ens.univ-artois.fr</span></p>
+        </div>
+
+      </div>
+    </div> 
+
+    <div class="container copyright text-center mt-4">
+      <p>
+      image de fond de la section accueil : <a href=" https://fr.freepik.com/photos-gratuite/structure-moleculaire-rougeoyante-fond-galaxie-futuriste-generee-par-ia_41667331.htm#fromView=search&page=1&position=17&uuid=11081192-4a25-49d8-948f-5bca724565be&query=network">lien de l'image</a><br>
+      image d'illustration de Linux : <a href="https://www.tecmint.com/wp-content/uploads/2014/01/LogKeys-Monitor-Keyboard-Keystrokes-in-Linux.webp">lien de l'image</a><br>
+      image d'illustration de Windows : <a href="https://www.geekom.fr/comment-installer-windows-11/">lien de l'image</a><br>
+      image d'illustration de Python : <a href="https://freesvg.org/387">lien de l'image</a><br>
+      image d'illustration de Wireshark : <a href="https://www.it-connect.fr/wp-content-itc/uploads/2023/05/Wireshark-Marquer-des-paquets-dans-une-capture.jpg.webp">lien de l'image</a><br>
+      image d'illustration de Cisco Packet Tracer : <a href="https://img.freepik.com/free-vector/electronic-devices-isometric-style_23-2147645382.jpg?semt=ais_hybrid&w=740&q=80">lien de l'image</a></p>
+      </p>
+      <p>
+      * Template Name: Craftivo <br>
+      * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/<br>
+      * Updated: Oct 04 2025 with Bootstrap v5.3.8<br>
+      * Author: BootstrapMade.com<br>
+      * License: https://bootstrapmade.com/license/<br>
+      * Lien du site du template : <a href="https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/">lien</a>
+      </p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Craftivo</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
