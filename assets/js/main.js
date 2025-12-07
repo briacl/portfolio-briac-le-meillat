@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -52,7 +52,7 @@
    * Toggle mobile nav dropdowns
    */
   document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
+    navmenu.addEventListener('click', function (e) {
       e.preventDefault();
       this.parentNode.classList.toggle('active');
       this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
@@ -131,13 +131,13 @@
     new Waypoint({
       element: item,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = item.querySelectorAll('.progress .progress-bar');
         progress.forEach((el, idx) => {
           // Ensure start at 0 for a smooth animation
-          try { el.style.width = '0%'; } catch (e) {}
+          try { el.style.width = '0%'; } catch (e) { }
           // get target value from aria-valuenow, data-percent or inline style
-          const target = el.getAttribute('aria-valuenow') || el.dataset.percent || (el.style.width ? el.style.width.replace('%','') : '0');
+          const target = el.getAttribute('aria-valuenow') || el.dataset.percent || (el.style.width ? el.style.width.replace('%', '') : '0');
           setTimeout(() => {
             el.style.width = target + '%';
             if (!el.getAttribute('aria-valuenow')) el.setAttribute('aria-valuenow', target);
@@ -157,13 +157,13 @@
   /**
    * Init isotope layout and filters
    */
-  document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+  document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
     let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function () {
       initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
         itemSelector: '.isotope-item',
         layoutMode: layout,
@@ -175,8 +175,8 @@
       window.isotopeInstances.push(initIsotope);
     });
 
-    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
-      filters.addEventListener('click', function(e) {
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
+      filters.addEventListener('click', function (e) {
         // If user clicks the 'All Work' (*) button, clear other selections and show all
         const filterValue = this.getAttribute('data-filter');
         const allBtn = filterValue === '*';
@@ -266,7 +266,7 @@
 
   // Attach behavior to any anchor with a data-filter attribute (nav, skills links)
   document.querySelectorAll('a[data-filter]').forEach(el => {
-    el.addEventListener('click', function(e) {
+    el.addEventListener('click', function (e) {
       e.preventDefault();
       const filter = this.getAttribute('data-filter');
       if (filter) filterPortfolioAndScroll(filter);
@@ -277,7 +277,7 @@
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+    document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config").innerHTML.trim()
       );
@@ -295,7 +295,7 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
-  window.addEventListener('load', function(e) {
+  window.addEventListener('load', function (e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
         setTimeout(() => {
@@ -348,7 +348,7 @@
       try {
         if (lang === 'en') el.innerHTML = el.dataset.en;
         else el.innerHTML = el.dataset.fr;
-      } catch (e) {}
+      } catch (e) { }
     });
 
     // Re-init typed.js with language-specific strings when applicable
@@ -356,7 +356,7 @@
     if (typedEl) {
       try {
         if (window.typedInstance && typeof window.typedInstance.destroy === 'function') window.typedInstance.destroy();
-      } catch (e) {}
+      } catch (e) { }
       const items = (lang === 'en' ? (typedEl.getAttribute('data-typed-items-en') || '') : (typedEl.getAttribute('data-typed-items') || ''));
       const strings = items ? items.split(',') : [];
       if (strings.length) {
@@ -387,6 +387,66 @@
       const current = localStorage.getItem('lang') || 'fr';
       setLanguage(current === 'fr' ? 'en' : 'fr');
     });
+  });
+
+  /**
+   * Portfolio Details Modal Logic
+   */
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('.portfolio-details')) {
+      e.preventDefault();
+      const link = e.target.closest('.portfolio-details');
+
+      // Get the parent card to extract fallback data if attributes are missing
+      const card = link.closest('.portfolio-item');
+
+      // Retrieve data from attributes or fallback
+      const title = link.getAttribute('data-title') || (card ? card.querySelector('h4').textContent : 'Titre du projet');
+      const category = link.getAttribute('data-category') || (card ? card.querySelector('.project-category').textContent : 'Catégorie');
+      const description = link.getAttribute('data-description') || 'Aucune description disponible pour ce projet.';
+      const githubLink = link.getAttribute('data-github');
+
+      // Image: try attribute, then try finding it in the card
+      let imageSrc = link.getAttribute('data-image');
+      if (!imageSrc && card) {
+        const img = card.querySelector('.portfolio-image-container img');
+        if (img) imageSrc = img.src;
+      }
+
+      // Update Modal content
+      const modalTitle = document.querySelector('#portfolioModalLabel');
+      const modalCategory = document.querySelector('.modal-project-category');
+      const modalDesc = document.querySelector('.modal-project-description');
+      const modalImg = document.querySelector('.modal-project-img');
+      const metaContainer = document.querySelector('.modal-project-meta');
+
+      if (modalTitle) modalTitle.textContent = title;
+      if (modalCategory) modalCategory.textContent = category;
+      if (modalDesc) modalDesc.innerHTML = description; // InnerHTML to allow <br> or simple formatting
+
+      if (modalImg) {
+        if (imageSrc) {
+          modalImg.src = imageSrc;
+          modalImg.style.display = 'block';
+        } else {
+          modalImg.style.display = 'none';
+        }
+      }
+
+      if (metaContainer) {
+        metaContainer.innerHTML = '';
+        if (githubLink && githubLink !== '#' && githubLink.trim() !== '') {
+          metaContainer.innerHTML = `<a href="${githubLink}" target="_blank" class="btn btn-dark"><i class="bi bi-github"></i> Voir le code sur GitHub</a>`;
+        }
+      }
+
+      // Show Modal
+      const modalEl = document.getElementById('portfolioModal');
+      if (modalEl) {
+        const myModal = new bootstrap.Modal(modalEl);
+        myModal.show();
+      }
+    }
   });
 
 })();
