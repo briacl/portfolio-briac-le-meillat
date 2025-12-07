@@ -54,10 +54,10 @@
           <li><a href="#hero" class="active" data-en="Home">Accueil</a></li>
           <li><a href="#about" data-en="Resume">CV</a></li>
           <li><a href="#portfolio" data-en="Portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#services"><span>Compétences</span> <i
+          <li class="dropdown"><a href="#services"><span data-en="Skills">Compétences</span> <i
                 class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>Développement web</span> <i
+              <li class="dropdown"><a href="#"><span data-en="Web Development">Développement web</span> <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li class="dropdown"><a href="#"><span data-en="Frontend">Front-end</span> <i
@@ -82,10 +82,10 @@
                 </ul>
               </li>
 
-              <li class="dropdown"><a href="#"><span>Administration réseau</span> <i
+              <li class="dropdown"><a href="#"><span data-en="Network Admin">Administration réseau</span> <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li class="dropdown"><a href="#"><span>Protocoles</span> <i
+                  <li class="dropdown"><a href="#"><span data-en="Protocols">Protocoles</span> <i
                         class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                       <li><a href="#portfolio" data-filter=".filter-ssh">SSH</a></li>
@@ -96,13 +96,16 @@
                     </ul>
                   </li>
 
-                  <li class="dropdown"><a href="#"><span>Réseau</span> <i
+                  <li class="dropdown"><a href="#"><span data-en="Network">Réseau</span> <i
                         class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
-                      <li><a href="#portfolio" data-filter=".filter-wireshark">Analyse de trame Ethernet, IP, ICMP via
+                      <li><a href="#portfolio" data-filter=".filter-wireshark"
+                          data-en="Ethernet, IP, ICMP Frame Analysis via Wireshark">Analyse de trame Ethernet, IP, ICMP
+                          via
                           Wireshark</a></li>
                       <li><a href="#portfolio" data-filter=".filter-ipv4">IPv4</a></li>
-                      <li><a href="#portfolio" data-filter=".filter-packettracer">Création de maquettes réseau basiques
+                      <li><a href="#portfolio" data-filter=".filter-packettracer"
+                          data-en="Basic Network Modeling (Cisco Packet Tracer)">Création de maquettes réseau basiques
                           (Cisco Packet Tracer)</a></li>
                       <li><a href="#portfolio" data-filter=".filter-lan">LAN/VLAN</a></li>
                       <li><a href="#portfolio" data-filter=".filter-dhcp">DHCP</a></li>
@@ -110,7 +113,7 @@
                     </ul>
                   </li>
 
-                  <li class="dropdown"><a href="#"><span>OS</span> <i
+                  <li class="dropdown"><a href="#"><span data-en="OS">OS</span> <i
                         class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                       <li><a href="#portfolio" data-filter=".filter-linux">Linux</a></li>
@@ -121,7 +124,7 @@
                 </ul>
               </li>
 
-              <li class="dropdown"><a href="#"><span>Programmation</span> <i
+              <li class="dropdown"><a href="#"><span data-en="Programming">Programmation</span> <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#portfolio" data-filter=".filter-python">Python</a></li>
@@ -129,7 +132,7 @@
                 </ul>
               </li>
 
-              <li class="dropdown"><a href="#"><span>Télécommunication</span> <i
+              <li class="dropdown"><a href="#"><span data-en="Telecommunications">Télécommunication</span> <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#portfolio" data-filter=".filter-ltspice">LTSpice</a></li>
@@ -823,11 +826,8 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details"  
-                        data-title="scraper-cinema" 
-                        data-category="Programmation"
-                        data-image="assets/img/387.png" 
-                        data-github="https://github.com/briacl/scraper-cinema"
+                      <a href="#" class="portfolio-details" data-title="scraper-cinema" data-category="Programmation"
+                        data-image="assets/img/387.png" data-github="https://github.com/briacl/scraper-cinema"
                         data-description="Projet de scraping qui permettrait de rechercher un film dans le scraping d'allociné, afin de sélectionner le ou les films qu'on aimerait voir, et de n'afficher que les dates et horaires du cinéma de harnes, ainsi je peux par exemple vouloir rechercher le film kaamelott et savoir tous les horaires de sorties dans ce cinéma, sans avoir à être pollué par tous les autres films qui ne m'intéressent pas">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -843,7 +843,8 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4 filter-dhcp filter-dns">
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4 filter-dhcp filter-dns">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
                   <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp"
@@ -876,7 +877,8 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4 filter-ssh">
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4 filter-ssh">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
                   <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp"
@@ -888,8 +890,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="Réalisation LAN Homelab"
+                      <a href="#" class="portfolio-details" data-title="Réalisation LAN Homelab"
                         data-category="Administration Réseau"
                         data-image="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp"
                         data-description="Réalisation de mon 1er réseau LAN Homelab">
@@ -911,7 +912,8 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4">
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
                   <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp"
@@ -923,8 +925,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="Cartographie basique LAN & VLAN"
+                      <a href="#" class="portfolio-details" data-title="Cartographie basique LAN & VLAN"
                         data-category="Réseau"
                         data-image="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp"
                         data-description="apprentissage de cartographie basique LAN & VLAN via le logiciel Cisco Packet Tracer">
@@ -957,8 +958,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="Analyse de trame via Wireshark"
+                      <a href="#" class="portfolio-details" data-title="Analyse de trame via Wireshark"
                         data-category="Réseau"
                         data-image="portfolio-illustrations\Wireshark-Marquer-des-paquets-dans-une-capture.jpg.webp"
                         data-description="apprentissage d'analyse de trame Ethernet, IP et ICMP via le logiciel Wireshark">
@@ -988,9 +988,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details"  
-                        data-title="willkommen_v2" 
-                        data-category="Programmation"
+                      <a href="#" class="portfolio-details" data-title="willkommen_v2" data-category="Programmation"
                         data-image="assets/img/387.png"
                         data-description="amélioration du programme willkommen, visuel plus moderne">
                         <i class="bi bi-arrow-right"></i>
@@ -1019,8 +1017,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="Installation Linux"
+                      <a href="#" class="portfolio-details" data-title="Installation Linux"
                         data-category="Administration"
                         data-image="portfolio-illustrations\OOmxgdF1SROoG_Rf9PcqAQ_副本.webp"
                         data-description="apprentissage d'installation de linux">
@@ -1050,8 +1047,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="Installation Windows"
+                      <a href="#" class="portfolio-details" data-title="Installation Windows"
                         data-category="Administration"
                         data-image="portfolio-illustrations\OOmxgdF1SROoG_Rf9PcqAQ_副本.webp"
                         data-description="apprentissage d'installation de windows">
@@ -1069,7 +1065,8 @@
               </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-symfony filter-php filter-symfony filter-mysql">
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-symfony filter-php filter-symfony filter-mysql">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
                   <img src="portfolio-illustrations/mesvoyages.png" alt="Projet" class="img-fluid" loading="lazy">
@@ -1080,10 +1077,8 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="Mesvoyages Website"
-                        data-category="Développement"  
-                        data-image="portfolio-illustrations/mesvoyages.png"
+                      <a href="#" class="portfolio-details" data-title="Mesvoyages Website"
+                        data-category="Développement" data-image="portfolio-illustrations/mesvoyages.png"
                         data-description="Ceci est le 4ème projet codé en php, il fait suite au projet lefauxinstagram, ici l'idée était d'apprendre à coder avec symfony afin de se mettre par la suite à laravel, bon le seul véritable défaut de ce site est d'avoir été obligé de le coder avec bootstrap pour le frontend, consignes oblige, mais au moins ce projet fut l'un des plus formateurs et des plu sympatique à coder, que ce soit pour l'apprentissage des relations bdd website, du framework symfony, ou encore ce modèle d'architecture mvc qu ej'ai bien appércié apprendre, véritablement, ce projet m'a marqué par tout ce qu'il m'a permit d'acquérir comme connaissances, d'ailleurs depuis, je réfléchis à d'autres projets qui prendraient ses caractéristiques de fonctionnement et d'architecture">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -1112,9 +1107,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="willkommen_v1" 
-                        data-category="Programmation"
+                      <a href="#" class="portfolio-details" data-title="willkommen_v1" data-category="Programmation"
                         data-image="assets/img/387.png"
                         data-description="petit programme permettant de créer d'autres programmes"
                         data-github="https://github.com/briacl/willkommen_v1">
@@ -1143,8 +1136,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="two-years-leaning-python"
+                      <a href="#" class="portfolio-details" data-title="two-years-leaning-python"
                         data-category="Programmation" data-image="assets/img/387.png"
                         data-description="dossier de tous les projets python que j'ai codé durant les deux ans d'apprentissage autodidacte de python"
                         data-github="https://github.com/briacl/two-years-learning-python">
@@ -1173,10 +1165,8 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="Briac's Website"
-                        data-category="Développement Web" 
-                        data-image="portfolio-illustrations/briac_website.png"
+                      <a href="#" class="portfolio-details" data-title="Briac's Website"
+                        data-category="Développement Web" data-image="portfolio-illustrations/briac_website.png"
                         data-description="1er site que j'ai codé en tailwindcss afin d'entrer dans la formation MMI de l'IUT de Lens, site pour mettre en valeur mes compétences de l'époque"
                         data-github="https://github.com/briacl/vue-briac">
                         <i class="bi bi-arrow-right"></i>
@@ -1205,9 +1195,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="Le Faux Instagram" 
-                        data-category="Développement"
+                      <a href="#" class="portfolio-details" data-title="Le Faux Instagram" data-category="Développement"
                         data-image="portfolio-illustrations/lefauxinstagram.png"
                         data-description="Ceci était un beau petit projet, dont l'idée était de recréer le fonctionnement basique d'un réseau social comme instagram, via php et mysql, il fallait donc savoir mettre en place toute une architecture avec l'ajout d'user, de profile, de photos pour les publications, les articles etc, tout cela qui est sauvegardé dans une bdd, afin d'avoir quelque chose de vraiment interactif et qui puisse vivre">
                         <i class="bi bi-arrow-right"></i>
@@ -1238,8 +1226,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="QEL : Questionnaire en ligne"
+                      <a href="#" class="portfolio-details" data-title="QEL : Questionnaire en ligne"
                         data-category="Développement"
                         data-image="portfolio-illustrations/qel_questionnaire_en_ligne.png"
                         data-description="C'est le 2nd projet que j'ai codé en php, ici je ne me suis pas attardé sur le frontend, mais bien plus sur le backend, puisque l'objectif était d'appliquer les connaissances apprises en gestion de bdd mysql et entre autre l'utilisation de phpMyAdmin, ainsi c'est le 1er site codé en php à avoir une vraie liaison avec une bdd mysql">
@@ -1271,9 +1258,7 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" 
-                        data-title="Weackers" 
-                        data-category="Développement Web"
+                      <a href="#" class="portfolio-details" data-title="Weackers" data-category="Développement Web"
                         data-image="portfolio-illustrations/weackers.png"
                         data-description="C'est le 1er projet, 1er site web que j'ai codé en php, l'idée était de mettre en place des pages html/css toutes simples, basiques, pour ensuite se concentrer sur les interactions entre l'utilisateur et le site, via le backend géré par le php">
                         <i class="bi bi-arrow-right"></i>

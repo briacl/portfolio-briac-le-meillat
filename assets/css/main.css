@@ -84,6 +84,7 @@ a:hover {
 .no-style {
   color: var(--contrast-color) !important;
   text-decoration: none !important;
+  border-bottom: none !important;
 }
 
 h1,
