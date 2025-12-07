@@ -79,6 +79,13 @@ a:hover {
   text-decoration: none;
 }
 
+/* Ensure small inline i18n labels keep site style (no underline/color change) */
+.hero .no-style,
+.no-style {
+  color: var(--contrast-color) !important;
+  text-decoration: none !important;
+}
+
 h1,
 h2,
 h3,

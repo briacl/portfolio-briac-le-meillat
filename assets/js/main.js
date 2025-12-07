@@ -114,7 +114,7 @@
   if (selectTyped) {
     let typed_strings = selectTyped.getAttribute('data-typed-items');
     typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
+    window.typedInstance = new Typed('.typed', {
       strings: typed_strings,
       loop: true,
       typeSpeed: 80,
@@ -331,5 +331,62 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+
+  /* Simple i18n toggle (FR <-> EN) for elements marked with data-en
+     - default content (French) is kept in the DOM; data-en holds the English version
+     - stores selection in localStorage under 'lang'
+  */
+  function initI18n() {
+    document.querySelectorAll('[data-en]').forEach(el => {
+      if (!el.dataset.fr) el.dataset.fr = el.innerHTML;
+    });
+  }
+
+  function setLanguage(lang) {
+    localStorage.setItem('lang', lang);
+    document.querySelectorAll('[data-en]').forEach(el => {
+      try {
+        if (lang === 'en') el.innerHTML = el.dataset.en;
+        else el.innerHTML = el.dataset.fr;
+      } catch (e) {}
+    });
+
+    // Re-init typed.js with language-specific strings when applicable
+    const typedEl = document.querySelector('.typed');
+    if (typedEl) {
+      try {
+        if (window.typedInstance && typeof window.typedInstance.destroy === 'function') window.typedInstance.destroy();
+      } catch (e) {}
+      const items = (lang === 'en' ? (typedEl.getAttribute('data-typed-items-en') || '') : (typedEl.getAttribute('data-typed-items') || ''));
+      const strings = items ? items.split(',') : [];
+      if (strings.length) {
+        window.typedInstance = new Typed('.typed', {
+          strings: strings,
+          loop: true,
+          typeSpeed: 80,
+          backSpeed: 40,
+          backDelay: 1800
+        });
+      }
+    }
+
+    // Update language toggle UI (button shows target language abbreviation)
+    document.querySelectorAll('#lang-toggle').forEach(btn => {
+      if (btn) btn.textContent = (lang === 'en') ? 'FR' : 'EN';
+    });
+  }
+
+  // Initialize i18n and apply saved language
+  initI18n();
+  const savedLang = localStorage.getItem('lang') || 'fr';
+  setLanguage(savedLang);
+
+  // Attach click handlers to any lang-toggle buttons
+  document.querySelectorAll('#lang-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const current = localStorage.getItem('lang') || 'fr';
+      setLanguage(current === 'fr' ? 'en' : 'fr');
+    });
+  });
 
 })();

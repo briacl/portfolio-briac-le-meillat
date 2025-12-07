@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Briac Le Meillat's Website</title>
+  <title>Site de Briac Le Meillat</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -49,14 +49,14 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Accueil</a></li>
-          <li><a href="#about">CV</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#hero" class="active" data-en="Home">Accueil</a></li>
+          <li><a href="#about" data-en="Resume">CV</a></li>
+          <li><a href="#portfolio" data-en="Portfolio">Portfolio</a></li>
               <li class="dropdown"><a href="#services"><span>Compétences</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Développement web</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li class="dropdown"><a href="#"><span>Frontend</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                      <li class="dropdown"><a href="#"><span data-en="Frontend">Front-end</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                       <li><a href="#portfolio" data-filter=".filter-figma">Figma</a></li>
                       <li><a href="#portfolio" data-filter=".filter-html">HTML / CSS</a></li>
@@ -67,7 +67,7 @@
                     </ul>
                   </li>
 
-                  <li class="dropdown"><a href="#"><span>Backend</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <li class="dropdown"><a href="#"><span data-en="Backend">Back-end</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                       <li><a href="#portfolio" data-filter=".filter-php">PHP</a></li>
                       <li><a href="#portfolio" data-filter=".filter-mysql">MySQL (phpMyAdmin)</a></li>
@@ -125,6 +125,7 @@
 
             </ul>
           </li>
+          <li><button id="lang-toggle" class="btn btn-sm btn-outline-secondary" aria-label="Basculer la langue" data-en="FR">EN</button></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -141,8 +142,8 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
-            <h2>Bonjour, je suis Briac Le Meillat</h2>
-            <p>Je suis <span class="typed" data-typed-items="Développeur Web, Administrateur Réseau, Programmeur, Analyste Télécom"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <h2 data-en="Hello, I'm Briac Le Meillat">Bonjour, je suis Briac Le Meillat</h2>
+            <p><span class="no-style" data-en="I am">Je suis</span> <span class="typed" data-typed-items="Développeur Web, Administrateur Réseau, Programmeur, Analyste Télécom" data-typed-items-en="Web Developer, Network Administrator, Programmer, Telecom Analyst"></span><span class="typed-cursor" aria-hidden="true"></span></p>
             <div class="social-links">
               <a href="https://github.com/briacl"><i class="bi bi-github"></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
@@ -175,7 +176,7 @@
                 <div class="status-indicator"></div>
               </div>
               <h3>Briac Le Meillat</h3>
-              <span class="role">Etudiant de 1ère année en R&T</span>
+              <span class="role" data-en="1st-year student in Networks & Telecommunications">Étudiant de 1ère année en R&T</span>
               <div class="rating">
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
@@ -188,21 +189,21 @@
             <div class="profile-stats">
               <div class="stat-item">
                 <h4>15</h4>
-                <p>Projets</p>
+                <p data-en="Projects">Projets</p>
               </div>
               <div class="stat-item">
                 <h4>5</h4>
-                <p>Années</p>
+                <p data-en="Years">Années</p>
               </div>
               <div class="stat-item">
                 <h4>2</h4>
-                <p>Certifications</p>
+                <p data-en="Certifications">Certifications</p>
               </div>
             </div>
 
             <div class="profile-actions">
-              <a href="#" class="btn-primary"><i class="bi bi-download"></i> Télécharger mon CV</a>
-              <a href="#" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+              <a href="#" class="btn-primary" data-en="Download my CV"><i class="bi bi-download"></i> Télécharger mon CV</a>
+              <a href="#" class="btn-secondary" data-en="Contact"><i class="bi bi-envelope"></i> Contact</a>
             </div>
 
             <div class="social-connect">
@@ -218,18 +219,18 @@
                 <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
                   <div class="content-wrapper">
                     <div class="bio-section">
-                      <div class="section-tag">A propos de moi</div>
-                      <h2>Ici, on compile motivation et créativité</h2>
-                      <p>J’ai découvert le développement web durant ma formation MMI à l’IUT de Lens (2022–2023), où j’ai appris mes premiers langages, la gestion de bases de données ainsi que la conception d’interfaces.<p>
-                      <p>J’ai ensuite consacré deux années à me perfectionner en autodidacte (2023–2025),en développement web et en programmation Python.</p>
-                      <p>Je poursuis aujourd’hui ma première année en BUT Réseaux & Télécommunications à l’IUT de Béthune (2025), tout en validant plusieurs certifications telles que Pix, le MOOC ANSSI et la certification Cisco Python (en cours).</p>
+                      <div class="section-tag" data-en="About me">À propos de moi</div>
+                      <h2 data-en="Here we combine motivation and creativity">Ici, on compile motivation et créativité</h2>
+                      <p data-en="I discovered web development during my MMI studies at IUT de Lens (2022–2023), where I learned my first programming languages, database management and interface design.">J’ai découvert le développement web durant ma formation MMI à l’IUT de Lens (2022–2023), où j’ai appris mes premiers langages, la gestion de bases de données ainsi que la conception d’interfaces.</p>
+                      <p data-en="I then spent two years self-teaching (2023–2025), improving my skills in web development and Python programming.">J’ai ensuite consacré deux années à me perfectionner en autodidacte (2023–2025), en développement web et en programmation Python.</p>
+                      <p data-en="I am currently in my first year of the Bachelor's in Networks & Telecommunications at IUT de Béthune (2025), while completing certifications such as Pix, the ANSSI MOOC and the Cisco Python certification (in progress).">Je poursuis aujourd’hui ma première année en BUT Réseaux & Télécommunications à l’IUT de Béthune (2025), tout en validant plusieurs certifications telles que Pix, le MOOC de l'ANSSI et la certification Cisco Python (en cours).</p>
                     </div>
 
                     <div class="details-grid">
                       <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
                         <i class="bi bi-briefcase"></i>
                         <div class="detail-content">
-                          <span>Experience</span>
+                          <span data-en="Experience">Expérience</span>
                           <strong>5 ans</strong>
                         </div>
                       </div>
@@ -237,32 +238,32 @@
                       <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
                         <i class="bi bi-mortarboard"></i>
                         <div class="detail-content">
-                          <span>Niveau d'étude</span>
-                          <strong>Etudiant en 1ère année de R&T</strong>
+                          <span data-en="Education level">Niveau d'étude</span>
+                          <strong data-en="1st-year student in Networks & Telecommunications">Etudiant en 1ère année de R&T</strong>
                         </div>
                       </div>
 
                       <div class="detail-item" data-aos="fade-up" data-aos-delay="350">
                         <i class="bi bi-geo-alt"></i>
                         <div class="detail-content">
-                          <span>Localisation</span>
-                          <strong>France, UE</strong>
+                          <span data-en="Location">Localisation</span>
+                          <strong data-en="France, EU">France, UE</strong>
                         </div>
                       </div>
 
                       <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
                         <i class="bi bi-envelope"></i>
                         <div class="detail-content">
-                          <span>Email</span>
-                          <strong>briac_lemeillat@ens.univ-artois.fr</strong>
+                          <span data-en="Email">Email</span>
+                          <strong data-en="briac_lemeillat@ens.univ-artois.fr">briac_lemeillat@ens.univ-artois.fr</strong>
                         </div>
                       </div>
 
                       <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
                         <i class="bi bi-calendar-check"></i>
                         <div class="detail-content">
-                          <span>Disponibilité</span>
-                          <strong>En étude</strong>
+                          <span data-en="Availability">Disponibilité</span>
+                          <strong data-en="Studies in progress">Études en cours</strong>
                         </div>
                       </div>
                     </div>
@@ -291,8 +292,8 @@
                   <div class="col-md-6" data-aos="fade-left" data-aos-delay="300">
                     <div class="section-header" data-aos="fade-left" data-aos-delay="200">
                       <div class="header-content">
-                        <div class="section-tag">parcours</div>
-                        <h3>Parcours d'étude</h3>
+                        <div class="section-tag" data-en="Journey">parcours</div>
+                        <h3 data-en="Study path">Parcours d'étude</h3>
                       </div>
                     </div>
                     <div class="education-timeline">
@@ -306,20 +307,20 @@
                               <span class="year-range">2025</span>
                               <span class="degree-level">Formation</span>
                             </div>
-                            <h4>1ère année R&T</h4>
-                            <p class="institution">IUT de Béthunes</p>
-                            <p class="description">Je suis en train de passer la certification Python de Cisco. J'ai évidemment la certification Pix. Et j'ai également la certification MOOC de l'ANSI</p>
+                            <h4 data-en="1st year Networks & Telecom">1ère année R&T</h4>
+                            <p class="institution" data-en="IUT de Béthune">IUT de Béthune</p>
+                            <p class="description" data-en="I am currently taking the Cisco Python certification. I hold the Pix certification and the ANSSI MOOC.">Je suis en train de passer la certification Python de Cisco. J'ai la certification Pix et le MOOC de l'ANSSI.</p>
                             <div class="achievement">
                               <i class="bi bi-award"></i>
-                              <span>Certification Pix</span>
+                              <span data-en="Pix certification">Certification Pix</span>
                             </div>
                             <div class="achievement">
                               <i class="bi bi-award"></i>
-                              <span>Certification MOOC de l'ANSI</span>
+                              <span data-en="ANSSI MOOC">MOOC de l'ANSSI</span>
                             </div>
                             <div class="achievement">
                               <i class="bi bi-award"></i>
-                              <span>Certification Cisco Python en cours</span>
+                              <span data-en="Cisco Python certification (in progress)">Certification Cisco Python en cours</span>
                             </div>
                           </div>
                         </div>
@@ -333,9 +334,9 @@
                               <span class="year-range">2023 - 2025</span>
                               <span class="degree-level">Autodidacte</span>
                             </div>
-                            <h4>2 ans d'approfondissement</h4>
-                            <p class="institution">Domicile</p>
-                            <p class="description">Durant ces 2 ans, j'ai approfondis mes connaissances et compétences dans le développement web et d'application sur téléphone. C'est également dans cette période que j'ai découvert et me suis perfectionné dans le langage de programmation Python</p>
+                            <h4 data-en="2 years of deepening">2 ans d'approfondissement</h4>
+                            <p class="institution" data-en="Home">Domicile</p>
+                            <p class="description" data-en="During these two years I deepened my knowledge and skills in web and mobile app development. It is also during this period that I discovered and improved my skills in the Python programming language">Durant ces 2 ans, j'ai approfondi mes connaissances et compétences dans le développement web et d'application sur téléphone. C'est également dans cette période que j'ai découvert et me suis perfectionné dans le langage de programmation Python</p>
                           </div>
                         </div>
 
@@ -348,9 +349,9 @@
                               <span class="year-range">2022 - 2023</span>
                               <span class="degree-level">Formation</span>
                             </div>
-                            <h4>MMI</h4>
-                            <p class="institution">IUT de Lens</p>
-                            <p class="description">C'est en MMI que j'ai découvert le développement web. J'y ai appris à coder mes tout premiers sites en PHP, que j'ai découvert également les manipulations de bases de données (MySQL & phpMyAdmin), ou encore que j'ai appris à designer l'interface (le frontend) du site. Toutes ces connaissances et compétences que je vais ensuite approfondir durant les 2 années suivantes</p>
+                            <h4 data-en="MMI">MMI</h4>
+                            <p class="institution" data-en="IUT de Lens">IUT de Lens</p>
+                            <p class="description" data-en="It was during the MMI program that I discovered web development. I learned to code my first sites in PHP, discovered database handling (MySQL & phpMyAdmin), and learned to design user interfaces (frontend). I continued to deepen these skills over the following two years.">C'est en MMI que j'ai découvert le développement web. J'y ai appris à coder mes tout premiers sites en PHP, que j'ai découvert également les manipulations de bases de données (MySQL & phpMyAdmin), ou encore que j'ai appris à designer l'interface (le frontend) du site. Toutes ces connaissances et compétences que je vais ensuite approfondir durant les 2 années suivantes</p>
                           </div>
                         </div>
                       </div>
@@ -359,15 +360,15 @@
 
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
                     <div class="skills-showcase">
-                      <div class="section-tag">Compétences</div>
-                      <h3>Compétences techniques</h3>
+                      <div class="section-tag" data-en="Skills">Compétences</div>
+                      <h3 data-en="Technical skills">Compétences techniques</h3>
 
                       <div class="skills-list skills-animation">
                         <!-- Frontend -->
                         <div class="skills-group">
-                          <div class="section-tag">Développement Web</div>
+                          <div class="section-tag" data-en="Web Development">Développement Web</div>
                           <div class="skill-row">
-                            <h4 class="skills-group-title">Frontend</h4>
+                            <h4 class="skills-group-title" data-en="Frontend">Front-end</h4>
                             <div class="skill-item">
                               <div class="skill-info">
                                 <a href="#portfolio" class="skill-link" data-filter=".filter-figma">Maquette UX basique (Figma)</a>
@@ -433,7 +434,7 @@
                         <!-- Backend -->
                         <div class="skills-group">
                           <div class="skill-row">
-                            <h4 class="skills-group-title">Backend</h4>
+                            <h4 class="skills-group-title" data-en="Backend">Back-end</h4>
                             <div class="skills-items">
                               <div class="skill-item">
                                 <div class="skill-info">
@@ -470,7 +471,7 @@
 
                         <!-- Protocoles -->
                         <div class="skills-group">
-                          <div class="section-tag">Administration Réseau</div>
+                          <div class="section-tag" data-en="Network Administration">Administration Réseau</div>
                           <div class="skill-row">
                             <h4 class="skills-group-title">Protocoles</h4>
                             <div class="skills-items">
@@ -654,16 +655,16 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span class="subtitle">Portfolio</span>
-        <h2>Portfolio</h2>
-        <p>Voici tous les projets que j'ai réalisés.</p>
+        <span class="subtitle" data-en="Portfolio">Portfolio</span>
+        <h2 data-en="Portfolio">Portfolio</h2>
+        <p data-en="Here are all the projects I've completed">Voici tous les projets que j'ai réalisés.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-            <li data-filter="*" class="filter-active">All Work</li>
+            <li data-filter="*" class="filter-active" data-en="All Work">Tous</li>
             <!-- Frontend -->
             <li data-filter=".filter-figma">Figma</li>
             <li data-filter=".filter-html">HTML / CSS</li>
@@ -705,9 +706,9 @@
 
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ltspice filter-mathlab">
-              <div class="portfolio-card">
+                  <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/387.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Télécommunication</span>
@@ -727,7 +728,7 @@
                   <div class="project-tags">
                     <span class="tag">Bootstrap</span>
                     <span class="tag">HTML/CSS</span>
-                    <span class="tag">Frontend</span>
+                    <span class="tag" data-en="Frontend">Front-end</span>
                   </div>
                   <div class="project-year">2024</div>
                 </div>
@@ -737,7 +738,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ltspice filter-mathlab">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations\image-illustration-ltspice.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations\image-illustration-ltspice.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Télécommunication</span>
@@ -766,7 +767,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/387.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Programmation</span>
@@ -794,7 +795,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4 filter-ssh">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Administration Réseau</span>
@@ -826,7 +827,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4 filter-dhcp filter-dns">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Administration Réseau</span>
@@ -856,7 +857,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux filter-packettracer filter-lan filter-ipv4">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Administration Réseau</span>
@@ -887,7 +888,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wireshark filter-linux">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations\Wireshark-Marquer-des-paquets-dans-une-capture.jpg.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations\Wireshark-Marquer-des-paquets-dans-une-capture.jpg.webp" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Administration Réseau</span>
@@ -916,7 +917,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/387.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Programmation</span>
@@ -944,7 +945,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-linux">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations\LogKeys-Monitor-Keyboard-Keystrokes-in-Linux.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations\LogKeys-Monitor-Keyboard-Keystrokes-in-Linux.webp" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Administration</span>
@@ -972,7 +973,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-windows">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations\OOmxgdF1SROoG_Rf9PcqAQ_副本.webp" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations\OOmxgdF1SROoG_Rf9PcqAQ_副本.webp" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Administration</span>
@@ -1000,11 +1001,11 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-symfony filter-php filter-symfony filter-mysql">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations/mesvoyages.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations/mesvoyages.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Développement Web</span>
-                      <h4>Mesvoyages Website</h4>
+                      <h4 data-en="Mesvoyages Website">Site Mesvoyages</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
@@ -1019,8 +1020,8 @@
                 <div class="portfolio-meta">
                   <div class="project-tags">
                     <span class="tag">Symfony</span>
-                    <span class="tag">Frontend</span>
-                    <span class="tag">Backend</span>
+                    <span class="tag" data-en="Frontend">Front-end</span>
+                    <span class="tag" data-en="Backend">Back-end</span>
                   </div>
                   <div class="project-year">2024</div>
                 </div>
@@ -1030,7 +1031,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/387.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Programmation</span>
@@ -1058,7 +1059,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="assets/img/387.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="assets/img/387.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Programmation</span>
@@ -1086,11 +1087,11 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-tailwind">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations/briac_website.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations/briac_website.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Développement Web</span>
-                      <h4>Briac's Website</h4>
+                      <h4 data-en="Briac's Website">Site personnel de Briac</h4>
                     </div>
                     <div class="portfolio-actions">
                       <a href="assets/img/portfolio/portfolio-3.webp" class="glightbox portfolio-link">
@@ -1104,7 +1105,7 @@
                 </div>
                 <div class="portfolio-meta">
                   <div class="project-tags">
-                    <span class="tag">Frontend</span>
+                    <span class="tag" data-en="Frontend">Front-end</span>
                     <span class="tag">TailwindCSS</span>
                   </div>
                   <div class="project-year">2023</div>
@@ -1115,7 +1116,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-php filter-mysql">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations/lefauxinstagram.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations/lefauxinstagram.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Développement Web</span>
@@ -1134,8 +1135,8 @@
                 <div class="portfolio-meta">
                   <div class="project-tags">
                     <span class="tag">MySQL</span>
-                    <span class="tag">Frontend</span>
-                    <span class="tag">Backend</span>
+                    <span class="tag" data-en="Frontend">Front-end</span>
+                    <span class="tag" data-en="Backend">Back-end</span>
                   </div>
                   <div class="project-year">2023</div>
                 </div>
@@ -1145,7 +1146,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-php filter-mysql">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations/qel_questionnaire_en_ligne.png" alt="Strategy Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations/qel_questionnaire_en_ligne.png" alt="Projet" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Développement</span>
@@ -1164,8 +1165,8 @@
                 <div class="portfolio-meta">
                   <div class="project-tags">
                     <span class="tag">MySQL</span>
-                    <span class="tag">Frontend</span>
-                    <span class="tag">Backend</span>
+                    <span class="tag" data-en="Frontend">Front-end</span>
+                    <span class="tag" data-en="Backend">Back-end</span>
                   </div>
                   <div class="project-year">2023</div>
                 </div>
@@ -1175,7 +1176,7 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-html filter-php">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
-                  <img src="portfolio-illustrations/weackers.png" alt="Web Development Project" class="img-fluid" loading="lazy">
+                  <img src="portfolio-illustrations/weackers.png" alt="Projet de développement web" class="img-fluid" loading="lazy">
                   <div class="portfolio-overlay">
                     <div class="portfolio-info">
                       <span class="project-category">Développement Web</span>
@@ -1220,9 +1221,9 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Briac Le Meillat</span>
+            <span class="sitename" data-en="Briac Le Meillat">Briac Le Meillat</span>
           </a>
-          <p>Votre partenaire de confiance en développement web, administration réseau et télécommunication.</p>
+          <p data-en="Your trusted partner in web development, network administration and telecommunications.">Votre partenaire de confiance en développement web, administration réseau et télécommunication.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-github"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
@@ -1230,37 +1231,37 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Liens utiles</h4>
+          <h4 data-en="Useful Links">Liens utiles</h4>
           <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#about">A propos de moi</a></li>
-            <li><a href="#services">Compétences</a></li>
-            <li><a href="credits.html" target="_blank" rel="noopener noreferrer">Page de crédits de ce site</a></li>
+            <li><a href="#" data-en="Home">Accueil</a></li>
+            <li><a href="#about" data-en="About me">A propos de moi</a></li>
+            <li><a href="#services" data-en="Skills">Compétences</a></li>
+            <li><a href="credits.html" target="_blank" rel="noopener noreferrer" data-en="Credits page for this site">Page de crédits de ce site</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Compétences</h4>
+          <h4 data-en="Skills">Compétences</h4>
           <ul>
-            <li><a href="#portfolio" data-filter=".filter-html,.filter-php,.filter-mysql,.filter-react,.filter-tailwind,.filter-bootstrap,.filter-figma,.filter-symfony,.filter-laravel">Développement Web</a></li>
-            <li><a href="#portfolio" data-filter=".filter-ssh,.filter-tcp,.filter-http,.filter-https,.filter-arp,.filter-wireshark,.filter-ipv4,.filter-packettracer,.filter-lan">Administration Réseau</a></li>
-            <li><a href="#portfolio" data-filter=".filter-python,.filter-c">Programmation</a></li>
-            <li><a href="#portfolio" data-filter=".filter-ltspice,.filter-mathlab">Télécommunication</a></li>
+            <li><a href="#portfolio" data-filter=".filter-html,.filter-php,.filter-mysql,.filter-react,.filter-tailwind,.filter-bootstrap,.filter-figma,.filter-symfony,.filter-laravel" data-en="Web Development">Développement Web</a></li>
+            <li><a href="#portfolio" data-filter=".filter-ssh,.filter-tcp,.filter-http,.filter-https,.filter-arp,.filter-wireshark,.filter-ipv4,.filter-packettracer,.filter-lan" data-en="Network Administration">Administration Réseau</a></li>
+            <li><a href="#portfolio" data-filter=".filter-python,.filter-c" data-en="Programming">Programmation</a></li>
+            <li><a href="#portfolio" data-filter=".filter-ltspice,.filter-mathlab" data-en="Telecommunications">Télécommunication</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Me contacter</h4>
-          <p>1230 Rue de l'Université CS 20819, 62400 Béthune</p>
-          <p>France</p>
-          <p><strong>Email:</strong> <span>briac_lemeillat@ens.univ-artois.fr</span></p>
+          <h4 data-en="Contact Me">Me contacter</h4>
+          <p data-en="1230 Rue de l'Université CS 20819, 62400 Béthune">1230 Rue de l'Université CS 20819, 62400 Béthune</p>
+          <p data-en="France">France</p>
+          <p><strong data-en="Email:">Email:</strong> <span>briac_lemeillat@ens.univ-artois.fr</span></p>
         </div>
 
       </div>
     </div> 
 
-    <div class="container copyright text-center mt-4">
-      <p><a href="credits.html" target="_blank" rel="noopener noreferrer">Page de Crédits de ce site</a></p>
+      <div class="container copyright text-center mt-4">
+      <p><a href="credits.html" target="_blank" rel="noopener noreferrer" data-en="Credits page of this site">Page de Crédits de ce site</a></p>
     </div>
 
   </footer>
