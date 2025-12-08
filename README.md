@@ -18,3 +18,16 @@ Construit avec : **JavaScript**, **HTML/CSS**, **Copilot GPT-5 mini**, **Bootstr
 Il est permis d'utiliser ce projet à des fins personnelles et professionnelles, s'il est **précisé clairement** que **j'en suis l'auteur originel**.
 
 Ce projet est sous licence **MIT**.
+
+## Téléchargement de PDF (CV)
+
+Un lien de téléchargement a été ajouté sur la page d'accueil. Il utilise l'attribut `data-doc-download`.
+
+- Placez votre fichier PDF (par exemple votre CV) dans le dossier `assets/docs/` et nommez-le `mon-document.pdf` ou mettez à jour l'attribut `data-doc-download` dans `index.html`.
+- Exemple d'ancre dans `index.html`:
+
+```
+<a data-doc-download="assets/docs/mon-document.pdf" data-doc-filename="CV-Briac-Le-Meillat.pdf">Télécharger mon CV</a>
+```
+
+Le script JavaScript dans `assets/js/main.js` intercepte les clics sur `data-doc-download`, télécharge le fichier via `fetch` et force l'enregistrement avec le nom indiqué dans `data-doc-filename` (ou le nom extrait de l'URL si absent).

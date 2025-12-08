@@ -438,6 +438,15 @@
         if (githubLink && githubLink !== '#' && githubLink.trim() !== '') {
           metaContainer.innerHTML = `<a href="${githubLink}" target="_blank" class="btn btn-dark"><i class="bi bi-github"></i> Voir le code sur GitHub</a>`;
         }
+        // If a document download attribute is present, add a download button similar to the GitHub link
+        const docUrl = link.getAttribute('data-doc-download');
+        if (docUrl && docUrl !== '#' && docUrl.trim() !== '') {
+          const docFilename = link.getAttribute('data-doc-filename') || docUrl.split('/').pop();
+          // Build an anchor that uses the download attribute; this will prompt save-as for same-origin files
+          const downloadHtml = ` <a href="${docUrl}" download="${docFilename}" class="btn btn-primary ms-2"><i class="bi bi-download"></i> Télécharger le document</a>`;
+          // Append to meta container without removing existing buttons (e.g., GitHub)
+          metaContainer.innerHTML += downloadHtml;
+        }
       }
 
       // Show Modal
@@ -447,6 +456,47 @@
         myModal.show();
       }
     }
+  });
+
+  /**
+   * Gestionnaire pour les liens de téléchargement basés sur l'attribut `data-doc-download`.
+   * Exemple d'usage:
+   * <a data-doc-download="assets/docs/mon-document.pdf" data-doc-filename="mon-fichier.pdf">Télécharger</a>
+   * Le script récupère le fichier via `fetch`, crée un blob et force le téléchargement avec le nom fourni
+   * (ou le nom de fichier extrait de l'URL si `data-doc-filename` est absent).
+   */
+  document.addEventListener('click', function (e) {
+    const el = e.target.closest('[data-doc-download]');
+    if (!el) return;
+    // If the click originates from a portfolio-details link (which opens the modal),
+    // do not perform the direct download here — the modal will show a download button instead.
+    if (e.target.closest('.portfolio-details')) return;
+    e.preventDefault();
+    const url = el.getAttribute('data-doc-download');
+    if (!url) return;
+    const filename = el.getAttribute('data-doc-filename') || url.split('/').pop();
+
+    fetch(url)
+      .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.blob();
+      })
+      .then(blob => {
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = blobUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 1500);
+      })
+      .catch(err => {
+        console.error('Erreur lors du téléchargement:', err);
+        // Fallback: ouvrir directement le fichier (la plupart des navigateurs proposeront de l'enregistrer)
+        window.location.href = url;
+      });
   });
 
 })();

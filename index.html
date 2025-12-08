@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Site de Briac Le Meillat</title>
+  <title>Briac Le Meillat's Website</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -60,7 +60,7 @@
               <li class="dropdown"><a href="#"><span data-en="Web Development">Développement web</span> <i
                     class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li class="dropdown"><a href="#"><span data-en="Frontend">Front-end</span> <i
+                  <li class="dropdown"><a href="#"><span data-en="Frontend">Frontend</span> <i
                         class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                       <li><a href="#portfolio" data-filter=".filter-figma">Figma</a></li>
@@ -72,7 +72,7 @@
                     </ul>
                   </li>
 
-                  <li class="dropdown"><a href="#"><span data-en="Backend">Back-end</span> <i
+                  <li class="dropdown"><a href="#"><span data-en="Backend">Backend</span> <i
                         class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
                       <li><a href="#portfolio" data-filter=".filter-php">PHP</a></li>
@@ -167,7 +167,7 @@
                 data-typed-items-en="Web Developer, Network Administrator, Programmer, Telecom Analyst"></span><span
                 class="typed-cursor" aria-hidden="true"></span></p>
             <div class="social-links">
-              <a href="https://github.com/briacl"><i class="bi bi-github"></i></a>
+              <a href="https://github.com/briacl" target="_blank"><i class="bi bi-github"></i></a>
               <a href="#"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
@@ -225,14 +225,14 @@
                 </div>
 
                 <div class="profile-actions">
-                  <a href="#" class="btn-primary" data-en="Download my CV"><i class="bi bi-download"></i> Télécharger
-                    mon CV</a>
+                  <button type="button" class="btn-primary" data-en="Download my CV" data-doc-download="assets/docs/mon-document.pdf" data-doc-filename="CV-Briac-Le-Meillat.pdf" aria-label="Télécharger mon CV"><i class="bi bi-download"></i> Télécharger
+                    mon CV</button>
                   <a href="#" class="btn-secondary" data-en="Contact"><i class="bi bi-envelope"></i> Contact</a>
                 </div>
 
                 <div class="social-connect">
+                  <a href="https://github.com/briacl" target="_blank"><i class="bi bi-github"></i></a>
                   <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-github"></i></a>
                 </div>
 
               </div>
@@ -783,6 +783,37 @@
 
 
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-python">
+              <div class="portfolio-card">
+                <div class="portfolio-image-container">
+                  <img src="assets/img/387.png" alt="Projet" class="img-fluid" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-info">
+                      <span class="project-category">Programmation</span>
+                      <h4>readme-generator</h4>
+                    </div>
+                    <div class="portfolio-actions">
+
+                      <a href="#" class="portfolio-details" 
+                        data-title="readme-generator" 
+                        data-category="Programmation"
+                        data-image="assets/img/387.png" 
+                        data-github="https://github.com/briacl/readme-generator"
+                        data-description="petit projet qui me permet, via une unique commande, de créer un fichier readme pour n'importe lequel de mes projets">
+                        <i class="bi bi-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-meta">
+                  <div class="project-tags">
+                    <span class="tag">Python</span>
+                  </div>
+                  <div class="project-year">2025</div>
+                </div>
+              </div>
+            </div>
+
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ltspice filter-mathlab">
               <div class="portfolio-card">
                 <div class="portfolio-image-container">
@@ -799,6 +830,7 @@
                         data-title="sae103 - découverte d'un dispositif de transmission (câble coaxial)"
                         data-category="Télécommunication"
                         data-image="portfolio-illustrations\image-illustration-ltspice.png"
+                        data-doc-download="RAPPORT SAE103 SEANCE 6 ALEX JOVENIAUX BRIAC LE MEILLAT.pdf"
                         data-description="Etude d'un câble coaxial et de ses caractéristiques, via LTSpice et MathLab">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -810,7 +842,7 @@
                     <span class="tag">LTSpice</span>
                     <span class="tag">MathLab</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2025</div>
                 </div>
               </div>
             </div>
@@ -826,8 +858,11 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="scraper-cinema" data-category="Programmation"
-                        data-image="assets/img/387.png" data-github="https://github.com/briacl/scraper-cinema"
+                      <a href="#" class="portfolio-details" 
+                        data-title="scraper-cinema" 
+                        data-category="Programmation"
+                        data-image="assets/img/387.png" 
+                        data-github="https://github.com/briacl/scraper-cinema"
                         data-description="Projet de scraping qui permettrait de rechercher un film dans le scraping d'allociné, afin de sélectionner le ou les films qu'on aimerait voir, et de n'afficher que les dates et horaires du cinéma de harnes, ainsi je peux par exemple vouloir rechercher le film kaamelott et savoir tous les horaires de sorties dans ce cinéma, sans avoir à être pollué par tous les autres films qui ne m'intéressent pas">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -838,7 +873,7 @@
                   <div class="project-tags">
                     <span class="tag">Python</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2025</div>
                 </div>
               </div>
             </div>
@@ -872,7 +907,7 @@
                     <span class="tag">DHCP</span>
                     <span class="tag">DNS</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2025</div>
                 </div>
               </div>
             </div>
@@ -890,7 +925,8 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="Réalisation LAN Homelab"
+                      <a href="#" class="portfolio-details" 
+                        data-title="Réalisation LAN Homelab"
                         data-category="Administration Réseau"
                         data-image="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp"
                         data-description="Réalisation de mon 1er réseau LAN Homelab">
@@ -907,7 +943,7 @@
                     <span class="tag">IPv4</span>
                     <span class="tag">SSH</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2025</div>
                 </div>
               </div>
             </div>
@@ -925,7 +961,8 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="Cartographie basique LAN & VLAN"
+                      <a href="#" class="portfolio-details" 
+                        data-title="Cartographie basique LAN & VLAN"
                         data-category="Réseau"
                         data-image="portfolio-illustrations\computer-network-management-isometric-illustration_7209-328.webp"
                         data-description="apprentissage de cartographie basique LAN & VLAN via le logiciel Cisco Packet Tracer">
@@ -941,7 +978,7 @@
                     <span class="tag">VLAN</span>
                     <span class="tag">IPv4</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2025</div>
                 </div>
               </div>
             </div>
@@ -958,7 +995,8 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="Analyse de trame via Wireshark"
+                      <a href="#" class="portfolio-details" 
+                        data-title="Analyse de trame via Wireshark"
                         data-category="Réseau"
                         data-image="portfolio-illustrations\Wireshark-Marquer-des-paquets-dans-une-capture.jpg.webp"
                         data-description="apprentissage d'analyse de trame Ethernet, IP et ICMP via le logiciel Wireshark">
@@ -972,7 +1010,7 @@
                     <span class="tag">Réseau</span>
                     <span class="tag">Linux</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2025</div>
                 </div>
               </div>
             </div>
@@ -988,7 +1026,9 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="willkommen_v2" data-category="Programmation"
+                      <a href="#" class="portfolio-details" 
+                        data-title="willkommen_v2" 
+                        data-category="Programmation"
                         data-image="assets/img/387.png"
                         data-description="amélioration du programme willkommen, visuel plus moderne">
                         <i class="bi bi-arrow-right"></i>
@@ -1000,7 +1040,7 @@
                   <div class="project-tags">
                     <span class="tag">Python</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2025</div>
                 </div>
               </div>
             </div>
@@ -1017,7 +1057,8 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="Installation Linux"
+                      <a href="#" class="portfolio-details" 
+                        data-title="Installation Linux"
                         data-category="Administration"
                         data-image="portfolio-illustrations\OOmxgdF1SROoG_Rf9PcqAQ_副本.webp"
                         data-description="apprentissage d'installation de linux">
@@ -1047,7 +1088,8 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="Installation Windows"
+                      <a href="#" class="portfolio-details" 
+                        data-title="Installation Windows"
                         data-category="Administration"
                         data-image="portfolio-illustrations\OOmxgdF1SROoG_Rf9PcqAQ_副本.webp"
                         data-description="apprentissage d'installation de windows">
@@ -1077,8 +1119,10 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="Mesvoyages Website"
-                        data-category="Développement" data-image="portfolio-illustrations/mesvoyages.png"
+                      <a href="#" class="portfolio-details" 
+                        data-title="Mesvoyages Website"
+                        data-category="Développement" 
+                        data-image="portfolio-illustrations/mesvoyages.png"
                         data-description="Ceci est le 4ème projet codé en php, il fait suite au projet lefauxinstagram, ici l'idée était d'apprendre à coder avec symfony afin de se mettre par la suite à laravel, bon le seul véritable défaut de ce site est d'avoir été obligé de le coder avec bootstrap pour le frontend, consignes oblige, mais au moins ce projet fut l'un des plus formateurs et des plu sympatique à coder, que ce soit pour l'apprentissage des relations bdd website, du framework symfony, ou encore ce modèle d'architecture mvc qu ej'ai bien appércié apprendre, véritablement, ce projet m'a marqué par tout ce qu'il m'a permit d'acquérir comme connaissances, d'ailleurs depuis, je réfléchis à d'autres projets qui prendraient ses caractéristiques de fonctionnement et d'architecture">
                         <i class="bi bi-arrow-right"></i>
                       </a>
@@ -1091,7 +1135,7 @@
                     <span class="tag" data-en="Frontend">Frontend</span>
                     <span class="tag" data-en="Backend">Backend</span>
                   </div>
-                  <div class="project-year">2024</div>
+                  <div class="project-year">2025</div>
                 </div>
               </div>
             </div>
@@ -1107,7 +1151,9 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="willkommen_v1" data-category="Programmation"
+                      <a href="#" class="portfolio-details" 
+                        data-title="willkommen_v1" 
+                        data-category="Programmation"
                         data-image="assets/img/387.png"
                         data-description="petit programme permettant de créer d'autres programmes"
                         data-github="https://github.com/briacl/willkommen_v1">
@@ -1136,8 +1182,10 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="two-years-leaning-python"
-                        data-category="Programmation" data-image="assets/img/387.png"
+                      <a href="#" class="portfolio-details" 
+                        data-title="two-years-leaning-python"
+                        data-category="Programmation" 
+                        data-image="assets/img/387.png"
                         data-description="dossier de tous les projets python que j'ai codé durant les deux ans d'apprentissage autodidacte de python"
                         data-github="https://github.com/briacl/two-years-learning-python">
                         <i class="bi bi-arrow-right"></i>
@@ -1165,8 +1213,10 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="Briac's Website"
-                        data-category="Développement Web" data-image="portfolio-illustrations/briac_website.png"
+                      <a href="#" class="portfolio-details" 
+                        data-title="Briac's Website"
+                        data-category="Développement Web" 
+                        data-image="portfolio-illustrations/briac_website.png"
                         data-description="1er site que j'ai codé en tailwindcss afin d'entrer dans la formation MMI de l'IUT de Lens, site pour mettre en valeur mes compétences de l'époque"
                         data-github="https://github.com/briacl/vue-briac">
                         <i class="bi bi-arrow-right"></i>
@@ -1195,7 +1245,9 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="Le Faux Instagram" data-category="Développement"
+                      <a href="#" class="portfolio-details" 
+                        data-title="Le Faux Instagram" 
+                        data-category="Développement"
                         data-image="portfolio-illustrations/lefauxinstagram.png"
                         data-description="Ceci était un beau petit projet, dont l'idée était de recréer le fonctionnement basique d'un réseau social comme instagram, via php et mysql, il fallait donc savoir mettre en place toute une architecture avec l'ajout d'user, de profile, de photos pour les publications, les articles etc, tout cela qui est sauvegardé dans une bdd, afin d'avoir quelque chose de vraiment interactif et qui puisse vivre">
                         <i class="bi bi-arrow-right"></i>
@@ -1226,7 +1278,8 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="QEL : Questionnaire en ligne"
+                      <a href="#" class="portfolio-details" 
+                        data-title="QEL : Questionnaire en ligne"
                         data-category="Développement"
                         data-image="portfolio-illustrations/qel_questionnaire_en_ligne.png"
                         data-description="C'est le 2nd projet que j'ai codé en php, ici je ne me suis pas attardé sur le frontend, mais bien plus sur le backend, puisque l'objectif était d'appliquer les connaissances apprises en gestion de bdd mysql et entre autre l'utilisation de phpMyAdmin, ainsi c'est le 1er site codé en php à avoir une vraie liaison avec une bdd mysql">
@@ -1258,7 +1311,9 @@
                     </div>
                     <div class="portfolio-actions">
 
-                      <a href="#" class="portfolio-details" data-title="Weackers" data-category="Développement Web"
+                      <a href="#" class="portfolio-details" 
+                        data-title="Weackers" 
+                        data-category="Développement Web"
                         data-image="portfolio-illustrations/weackers.png"
                         data-description="C'est le 1er projet, 1er site web que j'ai codé en php, l'idée était de mettre en place des pages html/css toutes simples, basiques, pour ensuite se concentrer sur les interactions entre l'utilisateur et le site, via le backend géré par le php">
                         <i class="bi bi-arrow-right"></i>
@@ -1300,7 +1355,7 @@
           <p data-en="Your trusted partner in web development, network administration and telecommunications.">Votre
             partenaire de confiance en développement web, administration réseau et télécommunication.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-github"></i></a>
+            <a href="https://github.com/briacl" target="_blank"><i class="bi bi-github" ></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
