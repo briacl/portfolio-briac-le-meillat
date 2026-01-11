@@ -342,12 +342,46 @@
     });
   }
 
+  // Preserve original attribute-based texts (used by portfolio modal)
+  function preserveAttributeI18n() {
+    // For attributes that are used by the modal or download logic, keep a -fr copy
+    document.querySelectorAll('[data-title]').forEach(el => {
+      if (!el.dataset.titleFr) el.dataset.titleFr = el.getAttribute('data-title');
+    });
+    document.querySelectorAll('[data-description]').forEach(el => {
+      if (!el.dataset.descriptionFr) el.dataset.descriptionFr = el.getAttribute('data-description');
+    });
+    document.querySelectorAll('[data-category]').forEach(el => {
+      if (!el.dataset.categoryFr) el.dataset.categoryFr = el.getAttribute('data-category');
+    });
+  }
+
   function setLanguage(lang) {
     localStorage.setItem('lang', lang);
     document.querySelectorAll('[data-en]').forEach(el => {
       try {
         if (lang === 'en') el.innerHTML = el.dataset.en;
         else el.innerHTML = el.dataset.fr;
+      } catch (e) { }
+    });
+
+    // Swap attribute-based texts (portfolio links, modal sources)
+    document.querySelectorAll('[data-title]').forEach(el => {
+      try {
+        if (lang === 'en' && el.dataset.titleEn) el.setAttribute('data-title', el.dataset.titleEn);
+        else if (el.dataset.titleFr) el.setAttribute('data-title', el.dataset.titleFr);
+      } catch (e) { }
+    });
+    document.querySelectorAll('[data-description]').forEach(el => {
+      try {
+        if (lang === 'en' && el.dataset.descriptionEn) el.setAttribute('data-description', el.dataset.descriptionEn);
+        else if (el.dataset.descriptionFr) el.setAttribute('data-description', el.dataset.descriptionFr);
+      } catch (e) { }
+    });
+    document.querySelectorAll('[data-category]').forEach(el => {
+      try {
+        if (lang === 'en' && el.dataset.categoryEn) el.setAttribute('data-category', el.dataset.categoryEn);
+        else if (el.dataset.categoryFr) el.setAttribute('data-category', el.dataset.categoryFr);
       } catch (e) { }
     });
 
@@ -378,6 +412,7 @@
 
   // Initialize i18n and apply saved language
   initI18n();
+  preserveAttributeI18n();
   const savedLang = localStorage.getItem('lang') || 'fr';
   setLanguage(savedLang);
 
@@ -388,6 +423,8 @@
       setLanguage(current === 'fr' ? 'en' : 'fr');
     });
   });
+
+  // PDF generation for CV was removed; download button is commented out in HTML.
 
   /**
    * Portfolio Details Modal Logic
